@@ -23,8 +23,6 @@ query <- "INSERT INTO train_data (TrainNo,Train_Name,Start_Station,End_Station)
           VALUES (11071,'Kamayani Express', 'LTT',  'Banaras')"
 dbSendQuery(connection , query)
 
-
-
 # Read (SELECT) all Table
 query1 <- "select * from train_data"
 read <- dbGetQuery(connection, query1)
