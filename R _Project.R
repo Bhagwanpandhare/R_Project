@@ -38,7 +38,7 @@ read <- "SELECT * FROM Train_data WHERE Train_Name = 'Mail'"
 updated_data <- dbGetQuery(connection, read)
 print(updated_data)
 
-# Delete (DELETE) a movie
+# Delete (DELETE) a data
 del <- "DELETE FROM Train_data WHERE Train_Name = 'Kamayani Express'"
 dbSendQuery(connection, del)
 
